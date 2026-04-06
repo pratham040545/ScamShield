@@ -1,0 +1,613 @@
+================================================================
+SCAMSHIELD KNOWLEDGE BASE — FAKE JOB OFFERS
+================================================================
+This file teaches the AI how fake job offer scams work.
+It covers advance fee fraud, fake offer letters, overseas
+job scams, and verification methods — with Indian context.
+================================================================
+
+=== SECTION 1: HOW FAKE JOB OFFERS WORK ===
+
+Fake job offer scams are uniquely effective because they exploit
+hope rather than fear. Victims actively cooperate because they
+want the job to be real. This makes fake job scams harder to
+detect than other fraud types — the victim's own desire to
+believe overrides their skepticism.
+
+THE FIVE STAGES OF A FAKE JOB SCAM:
+
+STAGE 1 — TARGETING AND VICTIM SELECTION:
+Scammers systematically identify vulnerable job seekers using:
+- Naukri.com: searching "fresher" + "0-1 years experience" profiles
+- LinkedIn: filtering recent graduates, people "Open to Work"
+- Internshala: targeting students looking for internships
+- Shine.com, Monster.com: mass downloading resumes
+- College placement groups on WhatsApp and Telegram
+- Facebook groups: "Jobs in Mumbai/Delhi/Bangalore"
+
+What scammers look for in victim profiles:
+- Fresher or 0-2 years experience (desperate, less experienced)
+- Currently unemployed (visible on LinkedIn "Open to Work" badge)
+- Skills in high demand (Data Science, IT, Digital Marketing)
+- Located in Tier 2/3 cities (fewer local opportunities)
+- Recently uploaded resume (actively searching)
+
+Your resume on Naukri or LinkedIn is publicly visible.
+Scammers scrape these platforms daily for fresh targets.
+
+STAGE 2 — THE APPROACH:
+First contact comes through unexpected channels.
+Common approach methods:
+- WhatsApp message from unknown number
+- LinkedIn InMail from recently created profile
+- Email to address listed on resume (often personal Gmail)
+- Telegram message
+- SMS claiming to be from HR
+
+Sample first message:
+"Hi [Your Name], I came across your profile on Naukri.
+ We have an exciting opportunity for a Data Analyst role
+ at [Fake/Stolen Company Name]. The CTC is Rs 4.5-6 LPA.
+ It's a work from home position. Are you interested?
+ Please reply to discuss further."
+
+Why it works:
+- Uses your real name (scraped from resume)
+- Mentions a real-sounding company
+- Salary is attractive but believable
+- WFH makes it seem modern and flexible
+- No pressure — just "are you interested?"
+
+Red flags at this stage:
+- You never applied for this job
+- Contact from personal WhatsApp/Gmail not official company email
+- Company name is vague or recently formed
+- No job posting visible on company website or job portals
+
+STAGE 3 — THE FAKE INTERVIEW:
+Designed to feel real enough to build confidence.
+How fake interviews work:
+- Conducted over WhatsApp voice call, Google Meet, or Zoom
+- Interviewer uses professional-sounding name and title
+- Questions are generic and easy: "Tell me about yourself"
+- No technical questions for technical roles
+- Interview lasts 10-20 minutes
+- Selection is announced within hours or same day
+
+Real interview red flags:
+- Selected immediately without any technical assessment
+- Interviewer cannot answer basic questions about the company
+- Interview conducted only on WhatsApp, not official platform
+- Interviewer's LinkedIn doesn't exist or was created recently
+- No HR portal, ATS (Applicant Tracking System), or official process
+
+Legitimate hiring process for comparison:
+- Application through official portal or job board
+- Multiple rounds: screening + technical + HR
+- Takes days to weeks, not hours
+- Official company email for all communication
+- Offer letter comes after reference and background checks
+
+STAGE 4 — DOCUMENT AND DATA COLLECTION:
+Even if no money is extracted, this stage alone causes harm.
+Documents commonly requested:
+- Aadhaar card (front and back)
+- PAN card
+- 10th and 12th marksheets
+- Graduation certificate
+- Bank account details (account number + IFSC)
+- Cancelled cheque
+- Passport size photograph
+- Signature on blank paper
+
+What scammers do with these documents:
+Identity fraud: Opening bank accounts in your name
+Loan fraud: Taking loans using your identity
+SIM swap: Getting new SIM on your number
+Fake companies: Registering businesses using your details
+Dark web: Selling your complete KYC package
+
+Critical rule: Never send identity documents to unverified employers.
+              Legitimate companies conduct background checks through
+              official agencies AFTER you join, not before offer letter.
+
+STAGE 5 — MONEY EXTRACTION:
+The final stage where financial fraud occurs.
+Common money extraction methods:
+
+Method A — Direct fee demand:
+"To confirm your joining, pay Rs 2,000 registration fee."
+"Training kit and laptop will be sent after Rs 5,000 deposit."
+"Background verification fee of Rs 1,500 is required."
+"Security deposit of Rs 10,000 refundable after 6 months."
+
+Method B — Indirect extraction:
+"Buy this course (Rs 3,000) mandatory for the role."
+"Purchase our certified software license (Rs 4,500)."
+"Join our mandatory pre-joining training (Rs 8,000)."
+
+Method C — Silent identity fraud:
+No money asked directly.
+Documents used to open accounts, take loans, commit fraud.
+Victim discovers months later when bank/loan notices arrive.
+
+THE ABSOLUTE RULE:
+No legitimate employer anywhere in the world charges
+candidates money to give them a job.
+Registration fees, training fees, security deposits,
+background check fees, software fees — all are scams.
+Legitimate employers bear all hiring costs themselves.
+
+=== SECTION 2: RED FLAGS IN FAKE JOB OFFERS ===
+
+Fake job offers contain red flags at four levels — the initial
+contact, the company details, the offer itself, and what the
+scammer asks from the victim. Detecting red flags early,
+before emotional investment builds, is critical.
+
+LEVEL 1 — RED FLAGS IN THE INITIAL CONTACT:
+
+How they reached you:
+- Contacted you without any job application from your side
+- Message received on WhatsApp from unknown number
+- Telegram DM from unknown account
+- Email from Gmail, Yahoo, or Hotmail (not company domain)
+- LinkedIn message from profile created recently (check joining date)
+- SMS from unknown number claiming to be HR
+
+How they write:
+- Generic greeting: "Dear Candidate" instead of your name
+- OR uses your name but everything else is generic/copy-pasted
+- Poor grammar, spelling mistakes in "professional" communication
+- Excessive use of capital letters: "URGENT HIRING", "IMMEDIATE JOINERS"
+- Overly enthusiastic tone for a first message
+- Copy-paste formatting errors visible in the message
+
+What they say:
+- "We found your profile" without specifying where exactly
+- Immediate salary mention in first message (real recruiters discuss this later)
+- "Work from home" + "No experience needed" + "High salary" together
+- "Urgent requirement" or "Immediate joining" pressure
+- "Limited seats available" creating artificial scarcity
+- Job description is vague: "computer work", "online tasks", "data work"
+
+LEVEL 2 — RED FLAGS ABOUT THE COMPANY:
+
+Company identity:
+- Company name is vague: "ABC Solutions", "Global Tech Services"
+- Company name sounds like a real company but slightly different
+  Example: "Infosys BPO Solutions" vs real "Infosys BPM"
+- No verifiable presence: no LinkedIn page, no Google results
+- Website was created recently (check with whois.domaintools.com)
+- Website has no physical address or shows a residential address
+- Website has no employee profiles, About Us is generic
+
+Company verification failures:
+- CIN (Company Identification Number) not found on MCA portal
+- GST number not verifiable on GST portal
+- "We are partnered with Amazon/Google/Microsoft" but no proof
+- Claims to be MNC but has no international presence online
+- Glassdoor/AmbitionBox shows no reviews or very recent fake reviews
+
+Communication channels:
+- All communication on WhatsApp only, no official email
+- Official-looking email domain registered recently
+  Example: hr@infosys-bpo-solutions.com registered 2 months ago
+- Phone number is a personal mobile, not an office landline
+- No office address given, or address is a coworking space
+
+LEVEL 3 — RED FLAGS IN THE JOB OFFER ITSELF:
+
+The role:
+- Job title is inflated for a fresher: "Senior Manager", "Team Lead"
+- Role description is extremely vague: "handle online operations"
+- Skills required don't match the role described
+- No mention of reporting structure, team size, or projects
+- "Any graduate can apply" for a supposedly technical role
+
+The salary:
+- Salary is unrealistically high for the role and experience level
+  Fresher Data Analyst in India: Rs 2.5-5 LPA realistic
+  Fake offers often promise: Rs 6-15 LPA for zero experience
+- Salary range is extremely wide: "Rs 3-12 LPA" (real offers are specific)
+- "Incentives up to Rs 50,000/month" with no base salary clarity
+- Salary mentioned before any interview has happened
+
+The selection process:
+- Selected after a 10-minute WhatsApp call
+- No technical test for a technical role
+- "You are selected" within hours of first contact
+- Interview conducted by someone who seems to know nothing about the field
+- No background check, reference check, or document verification process
+- Joining date is extremely urgent: "Can you join tomorrow?"
+
+The offer letter:
+- Arrives within hours of "interview"
+- No CIN or company registration number on letterhead
+- Designation is "Senior" for a fresher with 0 experience
+- Salary breakdown has unusual components
+- Signatory name has no LinkedIn presence
+- PDF is poorly formatted, logo is pixelated or low quality
+- Letter asks you to sign and return within 24 hours
+
+LEVEL 4 — RED FLAGS IN WHAT THEY ASK FROM YOU:
+
+Any money request:
+- Registration fee to "confirm your seat"
+- Training fee for "mandatory pre-joining course"
+- Security deposit "refundable after 6 months"
+- Background verification fee
+- Laptop or equipment deposit
+- Uniform or ID card fee
+- Any fee for any reason before or during joining
+RULE: Legitimate employers NEVER ask candidates for money. Ever.
+
+Suspicious document requests:
+- Aadhaar + PAN + bank details before offer letter
+- "Send documents on WhatsApp" instead of official HR portal
+- Blank signed paper or signature on blank letterhead
+- Cancelled cheque before any employment contract
+- Documents requested urgently "within 2 hours"
+- More documents than a standard background check requires
+
+Personal information requests:
+- Mother's maiden name (security question answer)
+- All bank account details including net banking credentials
+- UPI ID and registered mobile number together
+- Emergency contact details unusually early in process
+
+COMBINED RED FLAG SCORE:
+If a job offer has ANY of these combinations — it is almost certainly fake:
+- Contacted without applying + salary too high + WhatsApp only = SCAM
+- Fast selection + fee required + Gmail communication = SCAM
+- Vague role + WFH + no experience needed + high salary = SCAM
+- Documents on WhatsApp + no office address + new company = SCAM
+- Offer letter within hours + joining tomorrow + fee required = SCAM
+
+=== SECTION 3: INDIAN JOB SCAM PATTERNS ===
+
+Indian job scams exploit specific cultural, economic, and
+institutional patterns unique to India. Understanding these
+patterns allows detection of scams that generic fraud
+detectors completely miss.
+
+PATTERN 1 — IT/BPO COMPANY IMPERSONATION:
+India's IT sector employs millions and millions more aspire
+to join. Scammers heavily impersonate top IT companies.
+
+Commonly impersonated Indian IT companies:
+- TCS (Tata Consultancy Services)
+- Infosys
+- Wipro
+- Cognizant
+- HCL Technologies
+- Tech Mahindra
+- Accenture India
+- IBM India
+- Capgemini India
+
+How IT job scams work:
+Fake "TCS off-campus drive" messages circulate on WhatsApp:
+"TCS is conducting off-campus hiring for 2024 batch.
+ Apply now: [fake link]. Last date: [urgent deadline]."
+
+Fake appointment letter scam:
+Victim receives official-looking TCS/Infosys offer letter.
+Letter asks for "joining kit fee" of Rs 2,000-5,000.
+Or asks to complete a "mandatory online training" for Rs 3,000.
+
+How to verify IT job offers:
+TCS: All hiring through NextStep portal — nextStep.tcs.com
+Infosys: All hiring through careers.infosys.com
+Wipro: All hiring through careers.wipro.com
+Cognizant: All hiring through careers.cognizant.com
+Rule: If the job didn't come through the official company
+      careers portal — it is not a real offer from that company.
+None of these companies charge any fee at any stage.
+
+PATTERN 2 — FAKE CAMPUS PLACEMENT DRIVES:
+Scammers target final year students during placement season
+(August-December) when anxiety around placement is highest.
+
+Common fake campus drive patterns:
+- WhatsApp forwards in college groups:
+  "XYZ Company off-campus drive. Register here: [fake link]"
+- Fake "placement consultancy" claiming tie-up with your college
+- "Mass hiring drive" for 500+ positions — unrealistically large
+- Registration link collects personal details and "processing fee"
+
+Fake placement consultancy scam:
+"We are an authorized placement partner of TCS/Wipro.
+ Pay Rs 1,500 registration fee to appear in our exclusive drive.
+ Guaranteed interview call within 7 days."
+Reality: No legitimate placement consultancy charges students.
+         Companies pay consultancies, not candidates.
+         "Guaranteed interview" is always a red flag.
+
+PATTERN 3 — GOVERNMENT JOB SCAMS:
+Crores of Indians compete for government jobs — making this
+a massive target for scammers.
+
+Types of government job scams:
+
+Fake SSC/UPSC coaching scam:
+"Insider notes from toppers available. Rs 2,000 for complete
+ study material used by candidates who cleared last year."
+Reality: No "insider notes" guarantee success. These are
+         generic materials sold at premium prices.
+
+Fake government appointment letter:
+Official-looking letter claiming selection for:
+- Railways (RRB)
+- Banking (IBPS, SBI PO)
+- SSC (Staff Selection Commission)
+- Defence (Army, Navy, Air Force)
+- State government departments
+Letter asks for "security deposit" or "uniform fee."
+Red flags: Real government appointment letters are free.
+           Real letters specify date to report to office.
+           Real letters never ask for bank transfers.
+
+Fake "quota" job scam:
+"We have contacts in [government department].
+ Pay Rs 5-15 lakh to secure a permanent government job."
+This is both a scam AND illegal — bribery for government jobs.
+Many victims lose lakhs chasing these "connections."
+
+PATTERN 4 — OVERSEAS JOB SCAMS:
+Gulf countries (UAE, Saudi Arabia, Qatar), Canada, Australia,
+and UK are dream destinations for Indian job seekers.
+Scammers exploit these aspirations ruthlessly.
+
+How overseas job scams work:
+Step 1: "Direct company visa for Dubai. Salary AED 3,000/month."
+Step 2: "Pay agent fee of Rs 50,000 for visa processing."
+Step 3: "Additional Rs 20,000 for medical and documentation."
+Step 4: Money taken. No visa. Agent disappears.
+OR worse: Victim travels to find a completely different job
+          than promised — sometimes dangerous conditions.
+
+Fake overseas job offer red flags:
+- Job guaranteed without any interview
+- Agent asks for money before showing visa
+- Communication only on WhatsApp, no registered office
+- Company name not verifiable in destination country
+- Salary is unrealistically high for the role
+- "Only 2 spots left — decide today"
+
+Legitimate overseas recruitment process:
+- Recruitment through MOIA-registered agents only
+  (Check registration: emigrate.gov.in)
+- Company-sponsored visa — company bears visa cost
+- Formal interview before any offer
+- Offer letter on company letterhead with verifiable details
+- You can verify the company exists in destination country
+
+PATTERN 5 — FAKE INTERNSHIP SCAMS:
+Targeting students on Internshala, LinkedIn, college groups.
+
+Common fake internship patterns:
+"Amazon/Google/Microsoft virtual internship program.
+ Certificate + stipend of Rs 5,000/month.
+ Pay Rs 1,500 enrollment fee to secure your spot."
+
+Reality: Amazon, Google, Microsoft do NOT offer paid internships
+         through WhatsApp with enrollment fees.
+         Real internships through Internshala are free to apply.
+         Real stipends are paid TO interns, not FROM interns.
+
+Fake certificate internship:
+Victim pays Rs 500-2,000 for an "internship."
+Receives a certificate from a fake company after submitting work.
+Certificate has no value — company doesn't exist in industry.
+Used to mislead fresh graduates into fake portfolio building.
+
+PATTERN 6 — DATA ENTRY AND FORM FILLING SCAMS:
+Extremely common, targeting homemakers and students.
+"Work from home data entry. Rs 15,000-30,000/month.
+ No experience needed. Just typing work."
+
+How it works:
+Step 1: Victim pays "software license fee" of Rs 2,000-5,000
+Step 2: Receives "work" — typing random data into forms
+Step 3: Submits work, payment is rejected for "quality issues"
+Step 4: No payment ever made despite work submitted
+OR:
+Step 1: Victim is paid for initial small tasks
+Step 2: Asked to "invest" in higher paying task tiers
+Step 3: Investment increases, then disappears
+
+Reality: Legitimate data entry work pays Rs 8,000-15,000/month.
+         No legitimate data entry job requires upfront payment.
+         Legitimate platforms: Amazon Mechanical Turk, Appen, Scale AI.
+
+SALARY BENCHMARKS FOR FRESHERS IN INDIA:
+Knowing realistic salaries helps identify inflated fake offers.
+
+Role                          Realistic CTC (Fresher)
+Data Analyst                  Rs 2.5 - 5 LPA
+Software Developer            Rs 3 - 6 LPA
+Digital Marketing             Rs 2 - 4 LPA
+Content Writer                Rs 2 - 3.5 LPA
+Customer Support              Rs 1.8 - 3 LPA
+Data Entry                    Rs 1.2 - 2 LPA
+HR Executive                  Rs 2 - 3.5 LPA
+Sales Executive               Rs 1.5 - 3 LPA + incentives
+
+Any offer promising significantly more than these ranges
+for a fresher with no experience is a red flag.
+Example: Rs 8 LPA for a fresher Data Analyst with no experience
+         is unrealistic and indicates a fake offer.
+
+=== SECTION 4: HOW TO VERIFY ANY JOB OFFER ===
+
+Job offer verification is a systematic 5-step process that
+takes less than 10 minutes and can prevent months of financial
+and emotional damage. Always verify BEFORE sharing any
+documents or paying any fee — no matter how legitimate
+the offer looks.
+
+THE FIVE VERIFICATION STEPS:
+
+STEP 1 — VERIFY THE COMPANY EXISTS:
+
+Method A — MCA21 Portal (Ministry of Corporate Affairs):
+Every legitimate Indian company must be registered with MCA.
+How to check:
+1. Go to mca.gov.in
+2. Click "MCA Services" → "View Company/LLP Master Data"
+3. Enter the company name exactly as given in offer letter
+4. Check: Date of Incorporation, Status (must be "Active")
+5. Note the CIN (Company Identification Number)
+6. If company not found → company does not exist → SCAM
+
+Method B — GST Verification:
+Legitimate companies have valid GST registration.
+How to check:
+1. Go to gst.gov.in
+2. Click "Search Taxpayer"
+3. Enter GSTIN from offer letter
+4. Verify: Legal Name matches company name, Status is Active
+5. No GST number or invalid GSTIN → red flag
+
+Method C — Google Search:
+Search: "[Company Name] + reviews + Glassdoor"
+Search: "[Company Name] + scam + complaint"
+Search: "[Company Name] + headquarters + founded"
+Legitimate companies have years of search history.
+Scam companies have complaints on consumer forums.
+Check: MouthShut.com, ConsumerComplaints.in for fraud reports
+
+STEP 2 — VERIFY THE RECRUITER'S IDENTITY:
+
+LinkedIn verification:
+1. Search the recruiter's full name on LinkedIn
+2. Check: Profile creation date (recently created = red flag)
+3. Check: Number of connections (under 50 = suspicious)
+4. Check: Work history matches the company they claim to work for
+5. Check: Recommendations and endorsements (fake profiles have none)
+6. Check: Profile photo using Google Reverse Image Search
+   (drag photo to images.google.com — fake profiles use stock photos)
+
+Email domain verification:
+Legitimate recruiter email: hr@tcs.com, careers@infosys.com
+Red flag emails: tcs.hr.recruitment@gmail.com
+                 infosys.hiring2024@yahoo.com
+                 hr.wipro.india@outlook.com
+Rule: Any recruiter from a major company using Gmail/Yahoo
+      for official communication is not a real recruiter.
+
+Phone number verification:
+Search the phone number on Truecaller.
+Check if number is registered as "HR" or shows a personal name.
+Search number on Google — scam numbers often appear in complaint forums.
+
+STEP 3 — VERIFY THE OFFER LETTER:
+
+CIN verification:
+Every legitimate Indian company offer letter has a CIN.
+Format: U/L + 5 digits + state code + year + 6 digits
+Example: U72200MH2010PTC123456
+Verify this CIN on mca.gov.in → must match the company name exactly.
+
+Signatory verification:
+Search the signing authority's name on LinkedIn.
+They should have a verifiable profile with the company.
+Call the company's official number (from official website)
+and ask if [name] works there in [designation].
+
+Physical address verification:
+Google Maps search the office address from offer letter.
+Street View the address — is it an actual office building?
+Or is it a residential address, empty plot, or fake address?
+
+Document format red flags:
+Pixelated or stretched company logo
+Font inconsistencies throughout the letter
+Missing letterhead elements (CIN, registered address, website)
+Incorrect company registration details
+Salary components that don't add up mathematically
+
+STEP 4 — VERIFY THROUGH OFFICIAL CHANNELS:
+
+Call the company's official number:
+Find the official number from the company's official website
+(NOT from the offer letter or recruiter's message)
+Call and ask: "I received an offer letter for [role].
+               Can you verify if [your name] has been selected?"
+Legitimate companies can verify this.
+If they say "we don't have such a drive" → SCAM
+
+Check the official careers portal:
+TCS: nextstep.tcs.com
+Infosys: careers.infosys.com
+Wipro: careers.wipro.com
+Cognizant: careers.cognizant.com
+HCL: careers.hcltech.com
+If your application and selection are not visible
+on the official portal → the offer is fake
+
+Check official social media:
+Real hiring drives are announced on official LinkedIn pages.
+Real companies post about hiring on verified social accounts.
+If no announcement exists for the drive they claim → red flag
+
+STEP 5 — TRUST YOUR INSTINCTS AND ASK FOR HELP:
+
+Red flags that need no verification:
+- Any fee request = STOP immediately, it's a scam
+- "Don't tell anyone about this offer" = manipulation tactic
+- Extreme urgency "join by tomorrow" = pressure tactic
+- "This offer expires in 2 hours" = artificial scarcity
+
+Ask someone you trust:
+Share the offer letter with a college senior, professor,
+or working professional in your network.
+Fresh eyes often catch red flags you missed due to excitement.
+Post in trusted communities: LinkedIn groups, college alumni groups.
+
+Report suspicious job offers:
+National Cyber Crime Portal: cybercrime.gov.in
+Cyber Crime Helpline: 1930
+Report fake job ads to the platform where you found them:
+- Naukri: Report Job button on listing
+- LinkedIn: Report this job option
+- Internshala: Report internship option
+Ministry of Labour complaint portal: labour.gov.in
+
+LEGITIMATE JOB SEARCH CHANNELS IN INDIA:
+Always use these official channels — never respond to unsolicited offers.
+
+Job Portals:
+- Naukri.com (largest in India)
+- LinkedIn.com/jobs
+- Indeed.co.in
+- Internshala.com (internships and fresher jobs)
+- Shine.com
+- Foundit.in (formerly Monster India)
+- Instahyre.com (tech roles)
+- iimjobs.com (MBA/management roles)
+
+Government Jobs:
+- ssc.nic.in (Staff Selection Commission)
+- upsc.gov.in (UPSC)
+- ibps.in (banking jobs)
+- rbi.org.in/careers (RBI)
+- ncs.gov.in (National Career Service)
+- sarkariresult.com (aggregator)
+
+Direct Company Portals:
+Always apply through official company career pages.
+Search: "[Company Name] careers" on Google.
+Look for the official website in results — not third party links.
+
+CHECKLIST BEFORE ACCEPTING ANY JOB OFFER:
+□ Company verified on MCA portal?
+□ Recruiter has verifiable LinkedIn profile?
+□ Communication from official company email domain?
+□ No fee requested at any stage?
+□ Offer letter has valid CIN?
+□ Selection process involved actual technical assessment?
+□ Applied through official portal or job board?
+□ Offer verified by calling official company number?
+If any box is unchecked → verify further before proceeding.

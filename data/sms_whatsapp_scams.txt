@@ -1,0 +1,484 @@
+================================================================
+SCAMSHIELD KNOWLEDGE BASE — SMS AND WHATSAPP SCAMS
+================================================================
+This file teaches the AI how SMS and WhatsApp scams work.
+It covers UPI fraud, OTP theft, WhatsApp account takeover,
+task-based scams, and digital arrest — with Indian context.
+================================================================
+
+=== SECTION 1: UPI PAYMENT SCAMS ===
+
+UPI (Unified Payments Interface) scams are the most common
+financial fraud in India. Scammers exploit victims' confusion
+about how UPI works — specifically the difference between
+sending and receiving money.
+
+THE FUNDAMENTAL RULE VICTIMS FORGET:
+You NEVER need to enter your UPI PIN to receive money.
+PIN is ONLY required when YOU are sending money.
+If anyone asks you to enter your PIN to "accept" or "receive"
+a payment — it is 100% a scam, no exceptions.
+
+SCAM 1 — COLLECT REQUEST FRAUD:
+How it works:
+- Scammer sends a UPI collect request to victim's number
+- The notification says "Accept Rs 5,000 from [Scammer Name]"
+- Victim thinks they are accepting/receiving money
+- Victim enters their UPI PIN to "accept"
+- They have actually AUTHORIZED SENDING Rs 5,000 to the scammer
+Common trigger messages:
+- "Maine aapko Rs 10,000 bheje hain. Accept kar lo."
+  (I have sent you Rs 10,000. Please accept.)
+- "I'm sending you your refund. Please accept the request."
+- "Your prize money of Rs 25,000 is being sent. Approve it."
+Reality: Receiving money on UPI is automatic. No approval or PIN needed.
+         A "collect request" is always a REQUEST FOR YOU TO SEND MONEY.
+
+SCAM 2 — QR CODE FRAUD:
+How it works:
+- Scammer poses as buyer on OLX/Facebook Marketplace
+- "I want to buy your item. Let me send you advance payment."
+- Sends a QR code: "Scan this to receive Rs 2,000 advance"
+- Victim scans QR code and enters PIN
+- Victim has sent money, not received it
+Also used for:
+- "Scan to receive your EPF refund"
+- "Scan to get your electricity bill refund"
+- "Scan this QR to verify your bank account"
+Reality: QR codes on UPI apps always DEBIT money from your account.
+         There is no such thing as a "receive money QR code" in UPI.
+         Real buyers pay directly — they never send QR codes to sellers.
+
+SCAM 3 — FAKE CUSTOMER CARE FRAUD:
+How it works:
+- Victim has a payment issue and searches customer care number online
+- Scammers pay for Google ads or use SEO to rank fake numbers
+- Victim calls fake number, scammer poses as official support
+- Scammer says: "I need to remotely verify your account"
+- Asks victim to install AnyDesk, TeamViewer, or QuickSupport
+- Once installed, scammer can see victim's entire screen
+- Waits for OTP to appear, uses it to transfer money
+Fake numbers commonly found for: Paytm, PhonePe, Google Pay, BHIM
+Real customer care numbers:
+- PhonePe: 080-68727374
+- Google Pay: 1-800-419-0157
+- Paytm: 0120-4456-456
+- BHIM: 18001201740
+Rule: Real customer care NEVER asks you to install any app.
+      Real customer care NEVER asks for your PIN or OTP.
+      Always find customer care numbers from the official app, not Google.
+
+SCAM 4 — OVERPAYMENT SCAM:
+How it works:
+- Scammer "accidentally" sends more money than agreed
+  Example: Item costs Rs 500, scammer sends Rs 5,000
+- "Sorry I sent extra by mistake, please refund Rs 4,500"
+- Victim sends Rs 4,500 back
+- Original Rs 5,000 payment was fraudulent and gets reversed
+- Victim loses Rs 4,500
+Common on: OLX, Facebook Marketplace, Quikr
+Red flag: Anyone who "accidentally" overpays and asks for a refund
+          before you've shipped anything is running this scam.
+
+SCAM 5 — SCREEN SHARING FRAUD:
+Trigger messages:
+- "Your KYC is incomplete. Share your screen for verification."
+- "Our bank executive will guide you through the process via screen share."
+- "Download this app so our team can help you remotely."
+Apps scammers ask to install:
+- AnyDesk (most common)
+- TeamViewer QuickSupport
+- AirDroid
+- RemotePC
+Once screen is shared:
+- Scammer sees your banking app open
+- Waits for transaction OTP to appear on screen
+- Uses OTP within 30 seconds to transfer money
+Reality: No bank, UPI app, or government agency asks for screen sharing.
+         Uninstall AnyDesk/TeamViewer immediately if installed this way.
+         Call your bank to freeze account if screen was shared.
+
+HOW TO STAY SAFE ON UPI:
+1. Never enter PIN for any reason except when YOU are sending money
+2. Never scan QR codes sent by strangers
+3. Never install screen sharing apps for "customer support"
+4. Find customer care numbers only from official apps
+5. If you receive unexpected money — do not spend it, it may be reversed
+6. Enable transaction limits in your UPI app settings
+7. Report fraud immediately on cybercrime.gov.in or call 1930
+
+=== SECTION 2: OTP FRAUD ===
+
+OTP (One Time Password) fraud is the most financially damaging
+SMS scam in India. Scammers need just one OTP and 30-60 seconds
+to completely drain a bank account or take over any digital account.
+
+THE ABSOLUTE RULE:
+Never share OTP with anyone under any circumstance.
+No bank, no government agency, no company representative,
+no family member calling on someone else's behalf,
+no technical support executive will EVER ask for your OTP.
+OTP is like the key to your vault. Sharing it = handing over the key.
+
+HOW OTP FRAUD WORKS — STEP BY STEP:
+Step 1: Scammer already has victim's phone number and bank details
+        (bought from data brokers, obtained via phishing, or data breach)
+Step 2: Scammer attempts to log into victim's net banking or initiate transfer
+Step 3: Bank sends OTP to victim's registered mobile number
+Step 4: Scammer calls victim immediately, uses social engineering to get OTP
+Step 5: Scammer enters OTP within 30-60 seconds
+Step 6: Transaction complete. Money transferred. Account emptied.
+Total time from call to theft: Under 2 minutes.
+
+SOCIAL ENGINEERING SCRIPTS SCAMMERS USE:
+
+SCRIPT 1 — "Wrong OTP" trick:
+"Hello, I'm calling from SBI customer care. I accidentally sent
+ an OTP to your number instead of another customer. Could you
+ please share that OTP so I can redirect it? It won't affect
+ your account at all."
+Why it works: Triggers helpfulness. Victim thinks they're helping someone.
+Reality: The OTP was sent because scammer is logging into YOUR account.
+
+SCRIPT 2 — KYC verification trick:
+"This is HDFC Bank. Your KYC is expiring today. To prevent account
+ suspension, I need to verify your identity. Please share the OTP
+ sent to your registered mobile number."
+Why it works: Combines authority + fear of loss + urgency.
+Reality: Banks complete KYC through branches or official apps. Never via OTP over phone.
+
+SCRIPT 3 — RBI compliance trick:
+"RBI has mandated all bank customers to complete re-verification
+ by end of today. Please share the OTP you just received to
+ complete your compliance verification and avoid penalties."
+Why it works: RBI authority + regulatory fear + deadline.
+Reality: RBI never calls individuals. RBI compliance is never done via OTP over phone.
+
+SCRIPT 4 — Reward/cashback trick:
+"Congratulations! You have been selected for a Rs 5,000 cashback
+ from your bank. To credit the amount, please share the OTP
+ sent to your number for verification."
+Why it works: Greed + excitement bypasses skepticism.
+Reality: Cashback is credited automatically. No OTP needed to receive money.
+
+SCRIPT 5 — Reciprocity trick:
+Scammer first sends Rs 1 or Rs 5 via UPI to victim's account.
+Then calls: "I just sent you a test payment. Please share the OTP
+             you received to confirm receipt on our system."
+Why it works: Victim feels obligated after receiving something.
+Reality: Receiving UPI payment never generates an OTP. The OTP
+         was triggered by scammer attempting a LARGE transaction.
+
+SIM SWAP FRAUD (ADVANCED OTP THEFT):
+Scammer doesn't need to call you — they steal your SIM entirely.
+How it works:
+Step 1: Scammer collects your personal details via phishing or social media
+Step 2: Visits mobile operator store with fake ID documents
+Step 3: Requests SIM replacement claiming "lost SIM"
+Step 4: Your SIM is deactivated. Scammer's SIM gets your number.
+Step 5: All OTPs for your bank accounts now go to scammer's phone
+Step 6: Scammer logs into all your accounts, transfers money
+Warning signs of SIM swap:
+- Your phone suddenly shows "No Service" or "SIM not registered"
+- You stop receiving calls and SMS unexpectedly
+- You receive SMS saying your SIM has been changed
+What to do: Immediately call your operator from another phone.
+            Call your bank to freeze accounts if SIM swap suspected.
+
+WHAT TO DO WHEN YOU RECEIVE A SUSPICIOUS OTP:
+1. Do NOT share it with anyone calling you
+2. If you didn't initiate any transaction — someone is trying to access your account
+3. Immediately log into your bank app and check for pending transactions
+4. Change your net banking password immediately
+5. Call official bank helpline to report unauthorized login attempt
+6. If OTP was already shared: call bank immediately to freeze account
+   Cyber crime helpline: 1930
+   Online complaint: cybercrime.gov.in
+
+=== SECTION 3: WHATSAPP ACCOUNT TAKEOVER ===
+
+WhatsApp account takeover is uniquely dangerous because it turns
+the victim into an unwitting weapon against their own contacts.
+The scammer uses the victim's trusted identity to defraud
+family members and close friends who have no reason to be suspicious.
+
+HOW WHATSAPP REGISTRATION WORKS (AND HOW IT'S EXPLOITED):
+WhatsApp ties each account to a phone number.
+To register WhatsApp on a new device, a 6-digit OTP is sent
+to the registered phone number for verification.
+Scammers exploit this by:
+Step 1: Entering victim's number in WhatsApp on their own device
+Step 2: WhatsApp sends 6-digit registration OTP to victim's phone
+Step 3: Scammer calls victim and tricks them into sharing the code
+Step 4: Scammer enters the code — victim's WhatsApp transfers to scammer's device
+Step 5: Victim is logged out. Scammer has full access to all chats and contacts.
+
+TRICK 1 — "YOUR CODE CAME TO MY PHONE BY MISTAKE":
+Most common WhatsApp takeover script.
+Scammer: "Hi, I'm [friend's name]. I was trying to register and a code
+          accidentally went to your number. Can you share the 6 digits?
+          It won't affect your account, it's for mine."
+Why it works: Sounds completely plausible. Triggers helpfulness.
+Reality: WhatsApp codes are sent to YOUR number for YOUR account registration.
+         Sharing it = handing over YOUR WhatsApp to the scammer.
+         There is no way a registration code for someone else's account
+         accidentally lands on your phone.
+
+TRICK 2 — FORWARD THIS MESSAGE TO STAY VERIFIED:
+Viral WhatsApp forwards claiming:
+"WhatsApp is upgrading to WhatsApp Gold / WhatsApp Plus / WhatsApp Business.
+ To keep your account active, forward this message to 10 contacts
+ and enter this verification code: [6 digits]"
+Reality: There is no WhatsApp Gold. WhatsApp never sends codes via forwards.
+         The 6-digit code in the message is an actual OTP for account registration.
+         Entering it registers your account on a scammer's device.
+
+TRICK 3 — WHATSAPP WEB QR CODE SCAM:
+Scammer sends a message: "WhatsApp is updating security settings.
+ Scan this QR code to verify your account and avoid suspension."
+Or in person: Scammer shows their phone screen asking you to scan "a payment code"
+The QR code is actually a WhatsApp Web linking code.
+Scanning it links YOUR WhatsApp to THEIR device silently.
+You stay logged in and notice nothing.
+Scammer can now read all your messages without your knowledge.
+Reality: Never scan WhatsApp QR codes from unknown sources.
+         WhatsApp never asks you to scan codes for verification via messages.
+
+WHAT HAPPENS AFTER TAKEOVER:
+Once scammer has your WhatsApp:
+1. They export your contact list
+2. They message your closest contacts pretending to be you
+3. Common script: "Yaar bahut emergency hai. Mera wallet kaam nahi kar raha.
+   Rs 5,000 bhej de, kal wapas kar dunga." (Friend emergency money request)
+4. Contacts send money without suspecting anything — it's your number
+5. Scammer targets 10-20 contacts within an hour before you notice
+6. Total damage: Rs 50,000-2,00,000 across multiple victims
+
+HOW TO KNOW YOUR WHATSAPP IS HACKED:
+- Contacts call asking why you're asking for money
+- You get logged out of WhatsApp suddenly
+- WhatsApp shows "This account is registered on another device"
+- You see messages in chats you didn't send
+- WhatsApp Web shows active sessions you don't recognize
+
+IMMEDIATE STEPS IF HACKED:
+1. Re-register WhatsApp with your number immediately
+   (this logs out the scammer automatically)
+2. Enable Two-Step Verification: Settings → Account → Two-Step Verification
+3. Broadcast message to all contacts: "My WhatsApp was hacked.
+   Ignore any money requests from my number in last [X] hours."
+4. Alert close contacts personally — especially those who may have sent money
+5. File complaint: cybercrime.gov.in or call 1930
+
+PREVENTION — TWO-STEP VERIFICATION:
+Enable this immediately — it adds a 6-digit PIN to WhatsApp registration.
+Even if scammer gets your OTP, they can't register without this PIN.
+How to enable:
+WhatsApp → Settings → Account → Two-Step Verification → Enable
+Choose a PIN you will remember. Add recovery email.
+This single step prevents 99% of WhatsApp takeover attempts.
+
+LINKED DEVICES AUDIT:
+Check if any unknown devices are linked to your WhatsApp:
+WhatsApp → Settings → Linked Devices
+If you see any device you don't recognize → tap it → Log Out
+Do this audit once a month as a security habit.
+
+=== SECTION 3: WHATSAPP ACCOUNT TAKEOVER ===
+
+WhatsApp account takeover is uniquely dangerous because it turns
+the victim into an unwitting weapon against their own contacts.
+The scammer uses the victim's trusted identity to defraud
+family members and close friends who have no reason to be suspicious.
+
+HOW WHATSAPP REGISTRATION WORKS (AND HOW IT'S EXPLOITED):
+WhatsApp ties each account to a phone number.
+To register WhatsApp on a new device, a 6-digit OTP is sent
+to the registered phone number for verification.
+Scammers exploit this by:
+Step 1: Entering victim's number in WhatsApp on their own device
+Step 2: WhatsApp sends 6-digit registration OTP to victim's phone
+Step 3: Scammer calls victim and tricks them into sharing the code
+Step 4: Scammer enters the code — victim's WhatsApp transfers to scammer's device
+Step 5: Victim is logged out. Scammer has full access to all chats and contacts.
+
+TRICK 1 — "YOUR CODE CAME TO MY PHONE BY MISTAKE":
+Most common WhatsApp takeover script.
+Scammer: "Hi, I'm [friend's name]. I was trying to register and a code
+          accidentally went to your number. Can you share the 6 digits?
+          It won't affect your account, it's for mine."
+Why it works: Sounds completely plausible. Triggers helpfulness.
+Reality: WhatsApp codes are sent to YOUR number for YOUR account registration.
+         Sharing it = handing over YOUR WhatsApp to the scammer.
+         There is no way a registration code for someone else's account
+         accidentally lands on your phone.
+
+TRICK 2 — FORWARD THIS MESSAGE TO STAY VERIFIED:
+Viral WhatsApp forwards claiming:
+"WhatsApp is upgrading to WhatsApp Gold / WhatsApp Plus / WhatsApp Business.
+ To keep your account active, forward this message to 10 contacts
+ and enter this verification code: [6 digits]"
+Reality: There is no WhatsApp Gold. WhatsApp never sends codes via forwards.
+         The 6-digit code in the message is an actual OTP for account registration.
+         Entering it registers your account on a scammer's device.
+
+TRICK 3 — WHATSAPP WEB QR CODE SCAM:
+Scammer sends a message: "WhatsApp is updating security settings.
+ Scan this QR code to verify your account and avoid suspension."
+Or in person: Scammer shows their phone screen asking you to scan "a payment code"
+The QR code is actually a WhatsApp Web linking code.
+Scanning it links YOUR WhatsApp to THEIR device silently.
+You stay logged in and notice nothing.
+Scammer can now read all your messages without your knowledge.
+Reality: Never scan WhatsApp QR codes from unknown sources.
+         WhatsApp never asks you to scan codes for verification via messages.
+
+WHAT HAPPENS AFTER TAKEOVER:
+Once scammer has your WhatsApp:
+1. They export your contact list
+2. They message your closest contacts pretending to be you
+3. Common script: "Yaar bahut emergency hai. Mera wallet kaam nahi kar raha.
+   Rs 5,000 bhej de, kal wapas kar dunga." (Friend emergency money request)
+4. Contacts send money without suspecting anything — it's your number
+5. Scammer targets 10-20 contacts within an hour before you notice
+6. Total damage: Rs 50,000-2,00,000 across multiple victims
+
+HOW TO KNOW YOUR WHATSAPP IS HACKED:
+- Contacts call asking why you're asking for money
+- You get logged out of WhatsApp suddenly
+- WhatsApp shows "This account is registered on another device"
+- You see messages in chats you didn't send
+- WhatsApp Web shows active sessions you don't recognize
+
+IMMEDIATE STEPS IF HACKED:
+1. Re-register WhatsApp with your number immediately
+   (this logs out the scammer automatically)
+2. Enable Two-Step Verification: Settings → Account → Two-Step Verification
+3. Broadcast message to all contacts: "My WhatsApp was hacked.
+   Ignore any money requests from my number in last [X] hours."
+4. Alert close contacts personally — especially those who may have sent money
+5. File complaint: cybercrime.gov.in or call 1930
+
+PREVENTION — TWO-STEP VERIFICATION:
+Enable this immediately — it adds a 6-digit PIN to WhatsApp registration.
+Even if scammer gets your OTP, they can't register without this PIN.
+How to enable:
+WhatsApp → Settings → Account → Two-Step Verification → Enable
+Choose a PIN you will remember. Add recovery email.
+This single step prevents 99% of WhatsApp takeover attempts.
+
+LINKED DEVICES AUDIT:
+Check if any unknown devices are linked to your WhatsApp:
+WhatsApp → Settings → Linked Devices
+If you see any device you don't recognize → tap it → Log Out
+Do this audit once a month as a security habit.
+
+=== SECTION 5: DIGITAL ARREST SCAMS ===
+
+Digital arrest scams are the most sophisticated and financially
+devastating fraud in India. Victims are psychologically trapped
+for hours or days by scammers impersonating law enforcement,
+resulting in losses ranging from Rs 5 lakh to Rs 2 crore.
+Prime Minister Modi specifically warned about this scam
+in Mann Ki Baat (October 2024) calling it a national threat.
+
+WHAT IS A "DIGITAL ARREST":
+There is NO such thing as a "digital arrest" in Indian law.
+It is a completely fabricated concept invented by scammers.
+No law enforcement agency in India — CBI, ED, police, TRAI,
+Narcotics Control Bureau, Supreme Court — can arrest you
+digitally or keep you on a video call as "custody."
+If anyone claims you are under "digital arrest" — it is 100% a scam.
+
+HOW THE SCAM WORKS — STEP BY STEP:
+
+STEP 1 — THE INITIAL CALL (creates shock):
+Victim receives call from someone claiming to be:
+- TRAI officer: "Your mobile number is being used for illegal calls"
+- FedEx/courier officer: "A parcel in your name contains drugs/fake passports"
+- CBI officer: "Your Aadhaar has been linked to a money laundering case"
+- Narcotics officer: "Your bank account received proceeds from drug trafficking"
+The claim is always shocking and specific enough to seem credible.
+
+STEP 2 — ESCALATION TO "SENIOR OFFICER" (establishes authority):
+"This is a serious matter. I am connecting you to my senior officer."
+Call is transferred to another scammer playing a "senior CBI/ED officer."
+This person is more aggressive, more official-sounding.
+They have your name, address, Aadhaar number (bought from data brokers).
+Having personal details makes everything seem terrifyingly real.
+
+STEP 3 — VIDEO CALL IN FAKE "POLICE STATION" (visual deception):
+Victim is asked to switch to WhatsApp/Skype video call.
+Scammer appears in a police or CBI uniform (bought online for Rs 200).
+Background shows a fake "police station" or "court" setup.
+Official-looking documents with victim's name are shown on screen.
+"Arrest warrant" with victim's photo is displayed.
+Visual authenticity breaks down last traces of skepticism.
+
+STEP 4 — ISOLATION (cuts off all help):
+"You are under digital surveillance. Do not tell anyone about this call.
+ If you contact family, friends, or a lawyer, you will be immediately arrested.
+ Stay on this call. Do not leave your room."
+Victim is kept isolated for hours or entire days.
+Phone is monopolized — victim cannot call for help.
+This is the most critical phase — isolation enables everything that follows.
+
+STEP 5 — FAKE LEGAL PROCESS (simulates legitimacy):
+Scammers conduct fake "interrogation" asking detailed personal questions.
+A fake "Supreme Court judge" joins the video call.
+Fake "case number" and "FIR number" are provided.
+Victim is told they can be "cleared" by cooperating fully.
+Hours of this process make the victim feel deep inside a real legal case.
+
+STEP 6 — THE MONEY DEMAND (the real goal):
+"To avoid arrest and clear your name, you must pay a refundable
+ security deposit to the Supreme Court account."
+"This amount will be returned after investigation is complete."
+"Pay Rs [X] lakh immediately to avoid being taken into custody."
+Amounts demanded: Rs 50,000 to Rs 2 crore depending on victim's profile.
+Payment methods: NEFT to "government account", crypto, gift cards.
+Victim pays because they are completely broken down psychologically.
+
+REAL CASES IN INDIA:
+- Mumbai retired engineer lost Rs 1.06 crore over 3 days (2024)
+- Delhi doctor kept on video call for 40 hours, lost Rs 59 lakh
+- Hyderabad IT professional lost Rs 1.7 crore, took personal loan
+- Pune teacher lost life savings of Rs 14 lakh in single afternoon
+Common pattern: Victims educated, employed, rational people in normal life.
+               Fear and isolation bypass education and intelligence entirely.
+
+AGENCIES COMMONLY IMPERSONATED:
+- CBI (Central Bureau of Investigation)
+- ED (Enforcement Directorate)
+- TRAI (Telecom Regulatory Authority of India)
+- Narcotics Control Bureau (NCB)
+- Cyber Crime Division
+- Supreme Court of India
+- Income Tax Investigation Wing
+- Customs Department
+Reality: None of these agencies conduct arrests via phone or video call.
+         Real investigations involve physical notices delivered in person.
+         Real warrants are served physically by uniformed officers at your door.
+
+HOW TO IMMEDIATELY RECOGNIZE THIS SCAM:
+1. Unexpected call about a crime you know nothing about
+2. Immediate escalation to "senior officer"
+3. Request to switch to video call
+4. Person in uniform on video call
+5. Told to stay on call and not tell anyone
+6. Asked to pay money to avoid arrest
+Any ONE of these = hang up immediately.
+
+WHAT TO DO IF YOU RECEIVE THIS CALL:
+1. Hang up immediately — do not engage, do not argue
+2. Call a trusted family member or friend RIGHT NOW
+3. Call the real agency's official number to verify
+   (CBI: 011-24368638, Cyber Crime: 1930)
+4. Remember: No real officer will stop you from calling a lawyer
+5. File complaint: cybercrime.gov.in or nearest police station
+6. If you already paid: call 1930 immediately, banks can sometimes reverse
+
+THE THREE THINGS TO REMEMBER ALWAYS:
+1. Digital arrest does not exist in Indian law — it is fiction
+2. Real officers never demand payment to avoid arrest
+3. Real investigations always allow you to contact a lawyer

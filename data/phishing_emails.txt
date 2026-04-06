@@ -1,0 +1,433 @@
+================================================================
+SCAMSHIELD KNOWLEDGE BASE — PHISHING EMAILS
+================================================================
+This file teaches the AI how phishing emails work.
+It covers techniques attackers use, red flags to detect,
+and Indian-specific phishing patterns.
+================================================================
+
+=== SECTION 1: SENDER SPOOFING ===
+
+Phishing emails disguise who they're really from using three techniques.
+
+LEVEL 1 — DISPLAY NAME SPOOFING:
+The sender's display name shows a trusted brand like "SBI Bank" or
+"Income Tax Department" but the actual email address is completely
+unrelated — often a free Gmail or Yahoo account.
+Example: Display name "HDFC Bank Alert" but actual email is hdfc.alert2024@gmail.com
+How to spot: Always click the sender name to reveal the full email address.
+
+LEVEL 2 — LOOKALIKE DOMAIN SPOOFING:
+Attackers register domains that look almost identical to real ones.
+Techniques used:
+- Typosquatting: sbiionline.com (extra i), amazom.com (m instead of n)
+- Subdomain tricks: sbi.co.in.secure-login.com (real domain is secure-login.com)
+- Hyphenation: sbi-netbanking.com, hdfc-alert.net
+- Wrong TLD: incometax.gov.in.com, irctc.co.com
+Rule: The real domain is always the part just before the first /
+      In "sbi.co.in.secure-login.com/verify" → real domain is "secure-login.com"
+
+LEVEL 3 — EMAIL HEADER SPOOFING:
+Advanced attackers forge the actual From: field in email headers.
+The email appears to come from support@sbi.co.in exactly.
+Only detectable by checking SPF, DKIM, DMARC records in email headers.
+Legitimate bank emails always pass SPF and DKIM checks.
+In Gmail: click three dots → Show Original → check "PASS" next to SPF and DKIM.
+
+REAL INDIAN EXAMPLES:
+- Fake: support@sbi-online-banking.net → Real: support@sbi.co.in
+- Fake: noreply@icicibankk.com → Real: noreply@icicibank.com
+- Fake: refund@incometax.gov.in.claims.xyz → Real: refund@incometax.gov.in
+- Fake: alerts@hdfcbannk.com → Real: alerts@hdfcbank.com
+
+=== SECTION 2: FAKE LINKS AND URL TRICKS ===
+
+Phishing emails always contain a malicious link disguised to look legitimate.
+Even technically aware users get fooled because the tricks happen at multiple levels.
+
+TRICK 1 — ANCHOR TEXT MISMATCH:
+The visible text of a link says one thing but the actual URL is different.
+Example: Email shows "Login to your SBI account → www.sbi.co.in"
+         But hovering reveals the real URL: www.sbi-secure-verify.net/login
+How to spot: Always hover over any link before clicking.
+             The real URL appears in the bottom left corner of your browser.
+             On mobile: long press the link to preview the actual URL.
+
+TRICK 2 — SUBDOMAIN CONFUSION:
+Attackers put the real brand name as a subdomain prefix to fool victims.
+Example: sbi.co.in.account-verify.com
+         Victims read "sbi.co.in" and think it's safe.
+         But the actual domain is "account-verify.com" — owned by the attacker.
+Rule: Read URLs right to left from the first single slash (/).
+      Everything before the slash is the domain.
+      The real owner is the last two parts before the slash.
+      "sbi.co.in.account-verify.com/login" → owner is "account-verify.com"
+
+TRICK 3 — URL SHORTENERS IN OFFICIAL COMMUNICATIONS:
+bit.ly, tinyurl.com, t.co, rb.gy used in emails claiming to be from banks or government.
+Real banks, UIDAI, Income Tax Department NEVER use URL shorteners in official emails.
+Any shortened URL in a financial or government email is a red flag.
+How to expand: paste the short URL into checkshorturl.com before clicking.
+
+TRICK 4 — HOMOGRAPH / UNICODE ATTACKS:
+Some characters in other languages look visually identical to English letters.
+Cyrillic 'а' looks exactly like Latin 'a' but is a completely different character.
+Examples:
+- pаypal.com (Cyrillic а) vs paypal.com (Latin a)
+- аmazon.com (Cyrillic а) vs amazon.com (Latin a)
+How to spot: Copy the URL and paste into Notepad — sometimes rendering differs.
+             Use VirusTotal.com to scan any suspicious URL.
+
+TRICK 5 — HTTP INSTEAD OF HTTPS:
+Any page asking for login, OTP, card details, or Aadhaar over HTTP is dangerous.
+Real bank and government pages always use HTTPS (padlock icon in browser).
+Important: HTTPS alone does not mean the site is safe — phishing sites also
+           get SSL certificates. Check BOTH the padlock AND the domain name.
+
+REAL INDIAN PHISHING LINK EXAMPLES:
+- http://sbi-online-verify.com/login (HTTP + fake domain)
+- https://sbi.co.in.update-kyc.net/account (subdomain trick)
+- bit.ly/hdfc-kyc-urgent (URL shortener in "bank" email)
+- https://incometax-refund.xyz/claim (wrong TLD, not .gov.in)
+- https://аmazon.in/offers (homograph attack — Cyrillic а)
+
+=== SECTION 3: URGENCY AND FEAR TACTICS ===
+
+Phishing emails work by bypassing logical thinking through psychological manipulation.
+Attackers create panic so victims act before they think.
+Understanding these triggers helps identify phishing even when technical signs are subtle.
+
+TRIGGER 1 — FEAR OF LOSS:
+Phishing emails threaten to take away something the victim values.
+Common fear-of-loss phrases:
+- "Your SBI account has been temporarily suspended"
+- "Your Aadhaar card will be permanently deactivated within 48 hours"
+- "Failure to update KYC will result in account closure"
+- "Your PAN card has been blocked due to suspicious activity"
+- "Your EPF account has been frozen"
+Why it works: Fear of losing access to money or identity documents triggers
+              immediate panic, overriding rational thinking.
+Reality check: Banks and government agencies send official letters for serious
+               account actions. They do not threaten via email with 24-hour deadlines.
+
+TRIGGER 2 — ARTIFICIAL DEADLINES:
+Phishing emails always include a tight deadline to prevent victims from verifying.
+Common deadline phrases:
+- "Act within 24 hours or your account will be closed permanently"
+- "This link expires in 2 hours"
+- "You must respond before midnight tonight"
+- "Final warning — last chance to update your details"
+Why it works: Deadlines create time pressure that stops victims from
+              calling the bank, checking the official website, or asking someone.
+Reality check: No legitimate financial institution closes accounts
+               within 24 hours via email without prior written notice.
+
+TRIGGER 3 — AUTHORITY IMPERSONATION:
+Phishing emails impersonate high-authority institutions to make victims comply without questioning.
+Commonly impersonated Indian authorities:
+- Reserve Bank of India (RBI)
+- Central Bureau of Investigation (CBI)
+- Income Tax Department
+- UIDAI / Aadhaar Authority
+- Enforcement Directorate (ED)
+- Supreme Court of India
+- TRAI (Telecom Regulatory Authority)
+Common authority phrases:
+- "This is an official communication from RBI"
+- "CBI has registered a case against your PAN number"
+- "Income Tax Department has detected discrepancies in your returns"
+- "TRAI will disconnect all your mobile numbers within 2 hours"
+Why it works: People are conditioned to obey authority figures immediately,
+              especially when legal consequences are threatened.
+Reality check: RBI never emails individuals directly about account issues.
+               CBI/police never warn suspects via email before arrest.
+               Government agencies communicate via official letters, not Gmail.
+
+TRIGGER 4 — PRIZE AND REWARD BAIT:
+Opposite of fear — excitement about unexpected gain lowers critical thinking.
+Common prize phrases:
+- "Congratulations! Your email was selected in KBC Lucky Draw"
+- "You have won Rs 25 lakh in Jio Anniversary Offer"
+- "Amazon India has selected you for a free iPhone 15"
+- "Your SBI account has an unclaimed reward of Rs 8,500"
+Why it works: Excitement and greed bypass skepticism just like fear does.
+Reality check: You cannot win a lottery or prize you never entered.
+               All prize claims requiring upfront fees are 100% scams.
+
+COMBINED ATTACK — FEAR + AUTHORITY + DEADLINE:
+Most sophisticated phishing emails combine all three triggers together.
+Example: "URGENT: RBI has detected suspicious transactions on your account.
+          Your account will be permanently blocked within 24 hours.
+          Click here immediately to verify your identity and avoid legal action."
+This single message uses authority (RBI), fear (account blocked, legal action),
+and deadline (24 hours) simultaneously — making it extremely effective.
+
+HOW TO BREAK THE PANIC:
+- Stop. Take 3 deep breaths before clicking anything.
+- Ask: Did I initiate this interaction? If no → suspicious.
+- Verify directly: Open a new browser tab, type the official website manually.
+- Call the official customer care number from the back of your card or official website.
+- Remember: Legitimate organizations give you days or weeks, not hours.
+
+=== SECTION 4: CREDENTIAL HARVESTING ===
+
+Credential harvesting is the primary goal of most phishing attacks.
+After tricking the victim into clicking a malicious link, attackers
+capture login credentials, OTPs, card details, or identity information
+through fake websites that look identical to legitimate ones.
+
+HOW FAKE LOGIN PAGES WORK:
+Attackers create pixel-perfect copies of real bank or government websites.
+The fake page looks identical — same logo, colors, fonts, layout.
+The only difference is the URL and the fact that everything you type
+is sent directly to the attacker's database.
+After capturing credentials, the fake page either:
+- Shows "Incorrect password, please try again" (to capture typing variations)
+- Shows "Session expired" and redirects to the real website
+- Pretends to process and then shows a fake success message
+The victim assumes nothing suspicious happened.
+
+WHAT ATTACKERS STEAL:
+Tier 1 — Account credentials:
+- Net banking username and password
+- Email account login
+- Social media account login
+
+Tier 2 — Financial details:
+- Debit/credit card number (16 digits)
+- Card expiry date
+- CVV number (3 digits on back)
+- ATM PIN
+
+Tier 3 — Identity documents:
+- Aadhaar number + date of birth
+- PAN card number
+- Passport number
+- Mother's maiden name (security question answer)
+
+Tier 4 — One Time Passwords:
+- Net banking OTP
+- UPI transaction OTP
+- Email/phone verification OTP
+CRITICAL: Entering OTP on a fake page gives attacker 30-60 seconds
+          to use it on the real website before it expires.
+
+ADVERSARY IN THE MIDDLE (AiTM) ATTACK:
+Advanced phishing that defeats even two-factor authentication.
+How it works:
+- Victim visits fake site that acts as a proxy for the real bank
+- Every input (username, password, OTP) is forwarded to real bank
+- Real bank's response is forwarded back to victim
+- Victim sees a completely normal login experience
+- Attacker captures session cookies — bypassing OTP entirely
+- With session cookies, attacker stays logged in even after OTP expires
+Signs: Slight loading delay, URL is wrong, sometimes minor visual glitches.
+
+FAKE KYC UPDATE PAGES:
+Very common in India targeting Paytm, PhonePe, UIDAI, and bank customers.
+Fake page asks to "re-verify" identity by entering:
+- Aadhaar number + OTP sent to registered mobile
+- PAN number + date of birth
+- Bank account number + IFSC code
+Once submitted, attacker has everything needed for identity fraud,
+opening fake bank accounts, or taking loans in victim's name.
+
+RECOGNIZING FAKE PAGES BEFORE ENTERING DETAILS:
+1. Check the URL FIRST — before looking at anything else on the page
+2. Look for HTTPS padlock — necessary but not sufficient
+3. Check the exact domain — not just that it contains the bank name
+4. Look for poor quality logos, slightly wrong fonts, broken images
+5. Never trust a page reached by clicking an email or SMS link
+6. When in doubt: close the tab, open a new one, type URL manually
+
+WHAT TO DO IF YOU ALREADY ENTERED CREDENTIALS:
+1. Immediately call your bank's official helpline (number on card back)
+2. Change your net banking password from a different device
+3. Block your debit/credit card via official app or helpline
+4. Check last 10 transactions for unauthorized activity
+5. File complaint on cybercrime.gov.in or call 1930 (cyber crime helpline)
+6. If Aadhaar was compromised: lock Aadhaar biometrics at myaadhaar.uidai.gov.in
+
+=== SECTION 5: INDIAN CONTEXT PHISHING ===
+
+Indian phishing attacks exploit institutions, fears, and cultural contexts
+specific to India. These attacks are highly effective because they target
+trust in well-known Indian government schemes and financial institutions.
+
+GOVERNMENT SCHEME PHISHING:
+Attackers impersonate popular Indian government schemes to steal bank details.
+Common schemes exploited:
+- PM Kisan Samman Nidhi: "Your Rs 2,000 installment is pending. Verify bank account."
+- Ayushman Bharat: "Your free health insurance card is ready. Click to activate."
+- PM Awas Yojana: "Your housing loan subsidy of Rs 2.67 lakh is approved. Claim now."
+- PM Ujjwala Yojana: "Free LPG connection approved. Submit Aadhaar to confirm."
+Why effective: Genuine beneficiaries of these schemes exist in large numbers.
+               Victims believe it's real because they may actually be eligible.
+Red flag: Real scheme benefits go directly to Aadhaar-linked bank accounts.
+          No scheme requires you to click a link to "claim" money.
+
+AADHAAR AND UIDAI PHISHING:
+Aadhaar is linked to everything in India — making Aadhaar threats extremely scary.
+Common Aadhaar phishing messages:
+- "Your Aadhaar card will be permanently deactivated within 24 hours.
+   Update your mobile number immediately: [fake link]"
+- "UIDAI has detected your Aadhaar being used in 3 states simultaneously.
+   Verify your identity to prevent misuse."
+- "Your Aadhaar KYC is expired. Re-verify to continue using government services."
+Reality: UIDAI never sends emails asking to click links for Aadhaar verification.
+         Aadhaar updates happen only at official Aadhaar centres or myaadhaar.uidai.gov.in
+         Aadhaar is never "deactivated" via email notice.
+
+INCOME TAX REFUND PHISHING:
+One of the most common and effective Indian phishing attacks.
+Sample fake email:
+"Dear Taxpayer, Income Tax Department has processed your refund of Rs 18,540.
+ To receive the refund in your bank account, please verify your account details
+ by clicking the link below within 7 working days.
+ Link: http://incometax-refund-claim.xyz/verify"
+Why effective: Many Indians file ITR and genuinely expect refunds.
+Reality: Income Tax refunds go automatically to the bank account linked with PAN.
+         The IT department never asks you to "verify" or "claim" via email link.
+         Official IT dept domain: incometax.gov.in — anything else is fake.
+
+IRCTC AND RAILWAY PHISHING:
+India has 23 million daily railway passengers — huge target base.
+Common IRCTC phishing:
+- "Your IRCTC ticket booking has failed. Refund of Rs 1,240 pending.
+   Click to claim: http://irctc-refund.net/claim"
+- "IRCTC is offering 50% discount on Tatkal bookings for Diwali.
+   Book now: http://irctc-diwali-offer.com"
+Reality: IRCTC refunds are automatic to original payment source.
+         Official domain only: irctc.co.in — no other domain is official.
+
+EPF AND PENSION PHISHING:
+Targets salaried employees and retirees.
+Common EPF phishing:
+- "Your EPF withdrawal request of Rs 85,000 is stuck due to KYC mismatch.
+   Update your Aadhaar-UAN link: [fake link]"
+- "EPFO: Your pension amount has been revised. Verify bank details to receive."
+Reality: EPF updates happen only on epfindia.gov.in or official EPFO app.
+         UAN portal login: unifiedportal-mem.epfindia.gov.in
+
+DIGITAL ARREST SCAM EMAILS:
+Sophisticated scam combining phishing with impersonation of law enforcement.
+Sample email:
+"This is an official notice from Cyber Crime Division, CBI.
+ Your email address has been found linked to an international money laundering case.
+ You are required to appear for digital verification within 24 hours.
+ Failure to respond will result in immediate arrest warrant.
+ Contact investigating officer: [fake number or link]"
+Reality: CBI, ED, and police NEVER send arrest warnings via email.
+         There is no such thing as "digital arrest" — it is entirely fabricated.
+         Real legal notices are served physically with court stamps and signatures.
+
+FESTIVE SEASON PHISHING (HIGH RISK PERIODS):
+Phishing attacks surge during Indian festivals and events.
+Diwali: Fake shopping offers, fake cashback, fake gift card generators
+IPL Season: Fake match ticket offers, fake fantasy cricket winning notifications
+Budget Season: Fake tax saving scheme emails, fake insurance offers
+COVID/Health Crisis: Fake vaccination slots, fake health insurance offers
+Election Season: Fake voter ID update requests, fake ECI communications
+
+HINGLISH PHISHING (HINDI + ENGLISH MIX):
+Some phishing messages use Hinglish to appear more local and trustworthy.
+Examples:
+- "Aapka SBI account 24 ghante mein band ho jayega. Abhi verify karein."
+- "Congratulations! Aapne Rs 50,000 jeeta hai. Claim karne ke liye click karein."
+- "Aapka Aadhaar card suspend ho gaya hai. Turant update karein."
+Red flag: Legitimate bank communications in India use formal language.
+          Mixing casual Hindi with urgent financial threats is a scam pattern.
+
+=== SECTION 6: WHAT LEGITIMATE EMAILS LOOK LIKE ===
+
+Understanding what genuine emails look like is as important as
+knowing phishing patterns. This prevents false positives — flagging
+real bank or government emails as suspicious.
+
+LEGITIMATE BANK EMAIL CHARACTERISTICS:
+
+Sender domain:
+- SBI: alerts@sbi.co.in, noreply@sbi.co.in
+- HDFC: alerts@hdfcbank.com, noreply@hdfcbank.com
+- ICICI: alerts@icicibank.com
+- Axis Bank: alerts@axisbank.com
+- Kotak: noreply@kotak.com
+Rule: Official bank emails ALWAYS come from the bank's own domain.
+      Never from Gmail, Yahoo, Hotmail, or lookalike domains.
+
+Language and tone:
+- Addresses you by your FULL NAME as registered with the bank
+- Formal, grammatically correct English
+- No spelling mistakes or odd capitalization
+- Does not use casual language or Hinglish
+
+What legitimate bank emails DO:
+- Inform you of transactions already completed
+- Send OTP for transactions YOU initiated
+- Notify about statement availability
+- Confirm changes YOU made to your account
+- Send scheduled promotional offers with unsubscribe option
+
+What legitimate bank emails NEVER do:
+- Ask for your password, PIN, or OTP
+- Ask you to click a link to "verify" or "update" your account
+- Threaten account closure within 24-48 hours
+- Ask for card number, CVV, or expiry date
+- Request Aadhaar or PAN via email
+- Use URL shorteners (bit.ly, tinyurl)
+- Send attachments asking you to "enable macros"
+
+LEGITIMATE GOVERNMENT EMAIL CHARACTERISTICS:
+
+Official Indian government email domains:
+- Income Tax: donotreply@incometax.gov.in
+- UIDAI: help@uidai.gov.in
+- EPFO: epfindia@epfindia.gov.in
+- RBI: only communicates via official notifications on rbi.org.in
+- IRCTC: care@irctc.co.in
+
+What legitimate government emails DO:
+- Confirm transactions or applications you submitted
+- Send informational newsletters you subscribed to
+- Notify about policy changes publicly
+- Direct you to official .gov.in domains only
+
+What legitimate government emails NEVER do:
+- Ask you to pay fees via UPI or link
+- Threaten arrest or legal action via email
+- Ask you to call a personal mobile number
+- Request Aadhaar OTP via email
+- Use free email domains like Gmail
+
+TECHNICAL MARKERS OF LEGITIMATE EMAILS:
+SPF Check: PASS (verifies email came from authorized server)
+DKIM Check: PASS (verifies email wasn't tampered in transit)
+DMARC: PASS (domain owner authorized this email)
+How to check in Gmail:
+1. Open email → click three dots (top right) → Show Original
+2. Look for SPF: PASS, DKIM: PASS, DMARC: PASS at the top
+3. Any FAIL here = treat email as suspicious regardless of appearance
+
+SAFE EMAIL EXAMPLE — SBI TRANSACTION ALERT:
+From: alerts@sbi.co.in
+Subject: Transaction Alert - Your SBI Account
+Body: "Dear [Your Full Name],
+      A debit of Rs 2,500.00 has been made from your account
+      ending XXXX on [date] at [merchant].
+      Available balance: Rs XX,XXX.XX
+      If you did not authorize this transaction, call 1800-11-2211"
+Why this is safe:
+- Comes from official sbi.co.in domain
+- Addresses you by full name
+- Shows only last 4 digits of account (not full number)
+- Contains no links asking for credentials
+- Provides official phone number for disputes
+
+WHEN YOU ARE UNSURE — SAFE VERIFICATION STEPS:
+1. Do NOT click any link in the email
+2. Open a new browser tab
+3. Type the official website URL manually
+4. Log in and check if the alert/offer/notification exists there
+5. If it doesn't exist on the real site → the email is phishing
+6. Call official customer care (number from official website or card back)
+   Never call numbers mentioned in the suspicious email itself

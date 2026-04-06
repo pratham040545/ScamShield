@@ -1,0 +1,568 @@
+================================================================
+SCAMSHIELD KNOWLEDGE BASE — URL AND DOMAIN ANALYSIS
+================================================================
+This file teaches the AI how to analyze URLs and domains
+for phishing and fraud indicators. Covers domain structure,
+spoofing techniques, Indian website patterns, and verification.
+================================================================
+
+=== SECTION 1: UNDERSTANDING URL STRUCTURE ===
+
+URLs (Uniform Resource Locators) have a precise anatomy.
+Understanding each component is essential for identifying
+whether a URL belongs to a legitimate organization or a scammer.
+Most phishing victims misread URLs because they read left to right
+and stop at the first familiar word they recognize.
+
+THE FIVE PARTS OF EVERY URL:
+
+PART 1 — PROTOCOL:
+https://www.sbi.co.in/home
+└─ https
+
+http  = Hypertext Transfer Protocol (unencrypted)
+https = Hypertext Transfer Protocol Secure (encrypted)
+The "s" means data between your browser and server is encrypted.
+Any page asking for passwords, card details, or OTP over HTTP
+(without the s) is dangerous — data travels in plain text.
+Important: https does NOT mean the site is legitimate.
+           Phishing sites also get SSL certificates for https.
+           https only means the connection is encrypted,
+           not that the destination is trustworthy.
+
+PART 2 — SUBDOMAIN:
+https://login.verify.sbi.co.in/account
+              └──────────┘
+              subdomains: login.verify
+              
+Subdomains come BEFORE the main domain.
+Anyone who owns a domain can create unlimited subdomains.
+Scammers exploit this with two techniques:
+Technique A: Own a fake domain, add real brand as subdomain
+             sbi.co.in.secure-login.net → owner is secure-login.net
+Technique B: Own a lookalike domain, add official-sounding subdomain
+             login.verify.sbi-secure.com → owner is sbi-secure.com
+
+PART 3 — DOMAIN (MOST IMPORTANT):
+https://sbi.co.in.secure-verify.com/login
+                  └─────────────┘
+                  real domain: secure-verify.com
+
+The domain is the registered name — the actual owner of the address.
+This is the single most important part to check in any URL.
+HOW TO FIND THE REAL DOMAIN:
+Step 1: Find the first single forward slash / in the URL
+Step 2: Look at everything between :// and that first /
+Step 3: Read it right to left
+Step 4: The last two segments before the first / = real domain
+Examples:
+- sbi.co.in.phishing.com/verify → real domain: phishing.com
+- secure.hdfc.bank-verify.net/login → real domain: bank-verify.net
+- login.icici.in.update.xyz/account → real domain: update.xyz
+
+PART 4 — TOP LEVEL DOMAIN (TLD):
+The suffix at the end of the domain name.
+Common legitimate TLDs for Indian institutions:
+.gov.in   → Indian government websites ONLY
+.co.in    → Indian companies (SBI, IRCTC)
+.in       → Indian websites
+.com      → Global companies (HDFC, ICICI, Paytm)
+.org      → Organizations
+Red flag TLDs often used by phishing sites:
+.xyz      → Very cheap, commonly used for scams
+.top      → Cheap, high scam usage
+.click    → Designed for click fraud
+.gq .ml .cf .ga → Free domains, heavily used for phishing
+.info     → Low cost, high phishing usage
+Rule: Indian government websites ALWAYS end in .gov.in
+      Any "government" website not ending in .gov.in is suspicious.
+
+PART 5 — PATH AND PARAMETERS:
+https://secure-verify.com/sbi/login/account?user=pratham&redirect=harvest
+                          └──────────────┘  └─────────────────────────────┘
+                          path              parameters
+
+Path: Directories and pages within the website
+      Phishing paths often mimic real paths: /login /verify /account /update
+      These words in path don't make URL safe if domain is wrong
+
+Parameters: Data passed to the page after ?
+            Red flag: redirect= or url= parameters pointing elsewhere
+            Example: legitimate.com/auth?redirect=phishing.com/steal
+            Your browser follows the redirect to the malicious site
+
+PUTTING IT ALL TOGETHER — URL READING EXERCISE:
+URL: https://sbi.co.in.kyc-update-secure.net/account/verify?session=12345
+
+Protocol:   https (encrypted — but doesn't mean safe)
+Subdomains: sbi.co.in (looks like SBI — it's just a prefix)
+Domain:     kyc-update-secure.net (REAL OWNER — a scammer)
+TLD:        .net (not .co.in — red flag for SBI impersonation)
+Path:       /account/verify (sounds official — means nothing)
+Parameters: session=12345 (tracking victim's session)
+
+Verdict: This URL has NOTHING to do with SBI.
+         sbi.co.in is just a deceptive subdomain prefix.
+         The real owner is kyc-update-secure.net — a scammer's domain.
+
+=== SECTION 2: DOMAIN SPOOFING TECHNIQUES ===
+
+Domain spoofing is the art of making a malicious domain look
+like a legitimate one. Attackers use six distinct techniques,
+often combining multiple techniques in a single URL to maximize
+deception. Recognizing these techniques is the core skill of
+URL fraud detection.
+
+TECHNIQUE 1 — TYPOSQUATTING:
+Registering domains with deliberate typos of popular websites.
+Targets users who mistype URLs in their browser address bar
+or don't carefully read URLs in emails and SMS.
+
+Common typosquatting patterns:
+- Character substitution: amazom.com (n→m), paypai.com (l→i)
+- Character addition: gooogle.com, flipkartt.com, sbiionline.com
+- Character omission: amazn.com, paypl.com, hdfcbnk.com
+- Character transposition: amazno.com, amaozn.com
+- Number substitution: faceb00k.com (o→0), g00gle.com
+
+Indian bank typosquatting examples:
+- sbiionline.com (extra i) vs sbi.co.in
+- hdfcbannk.com (extra n) vs hdfcbank.com
+- icicibankk.com (extra k) vs icicibank.com
+- paytmm.com (extra m) vs paytm.com
+- phonepe.net vs phonepe.com
+
+How to protect against typosquatting:
+Never type bank URLs from memory — use bookmarks.
+Always double check every character before logging in.
+Use official mobile apps instead of browser for banking.
+
+TECHNIQUE 2 — COMBOSQUATTING:
+Adding words to legitimate brand names to create official-sounding domains.
+This is the most common spoofing technique in Indian phishing attacks.
+The real brand name IS present in the domain — making it highly deceptive.
+
+Common word combinations used:
+Brand + action words: sbi-verify.com, hdfc-update.net, icici-login.com
+Brand + security words: sbi-secure.com, paytm-protected.net
+Brand + service words: sbi-netbanking.com, hdfc-customercare.com
+Brand + alert words: sbi-alert.net, hdfc-notification.com
+Brand + government words: sbi-rbi-verified.com, hdfc-gov-approved.net
+
+Indian combosquatting examples:
+- sbi-online-banking-secure.com
+- hdfc-account-verify.net
+- icici-kyc-update.in
+- paytm-kyc-verification.com
+- phonepe-customer-support.net
+- incometax-refund-claim.xyz
+- uidai-aadhaar-update.co.in
+- irctc-ticket-refund.net
+
+Rule: Legitimate brands own exactly ONE primary domain.
+      SBI = sbi.co.in — nothing else is official.
+      Any domain combining SBI with other words is fake.
+
+TECHNIQUE 3 — SUBDOMAIN SQUATTING:
+Placing the real brand name as a subdomain prefix on a malicious domain.
+Exploits the fact that most people read URLs left to right
+and stop reading when they see a familiar name.
+
+How it works:
+Attacker owns: malicious.com
+Creates subdomain: sbi.co.in.malicious.com
+Victim reads: "sbi.co.in" → thinks it's safe → stops reading
+Reality: sbi.co.in is just a prefix — malicious.com is the real owner
+
+Sophisticated subdomain squatting examples:
+- sbi.co.in.secure-banking.net/login
+- netbanking.sbi.co.in.verify.com/account
+- www.incometax.gov.in.refund.xyz/claim
+- myaadhaar.uidai.gov.in.update.net/kyc
+- www.irctc.co.in.ticket-refund.com/claim
+
+The deeper the real domain is buried the more deceptive:
+- secure.login.sbi.co.in.banking-portal.com/verify
+  Real domain: banking-portal.com
+  Everything before it: just subdomain prefixes
+
+TECHNIQUE 4 — HOMOGRAPH / UNICODE ATTACK:
+Using visually identical Unicode characters from other languages
+to register domains that look exactly like legitimate ones.
+These attacks are invisible to the naked eye.
+
+How it works:
+Unicode contains thousands of characters from all world languages.
+Some characters in Cyrillic, Greek, and other scripts look
+identical to Latin letters but are completely different characters.
+
+Commonly confused characters:
+Latin а (U+0061) vs Cyrillic а (U+0430) — identical appearance
+Latin e (U+0065) vs Cyrillic е (U+0435) — identical appearance
+Latin o (U+006F) vs Cyrillic о (U+043E) — identical appearance
+Latin p (U+0070) vs Cyrillic р (U+0440) — identical appearance
+
+Homograph attack examples:
+- рaypal.com (Cyrillic р) — looks like paypal.com
+- аmazon.in (Cyrillic а) — looks like amazon.in
+- googIe.com (capital I) — looks like google.com
+- sbi.cо.in (Cyrillic о) — looks like sbi.co.in
+
+How to detect homograph attacks:
+Copy the URL and paste into a plain text editor
+Check if any characters look slightly different on close inspection
+Use browser address bar — modern browsers show warning for mixed scripts
+Scan with VirusTotal.com
+
+TECHNIQUE 5 — TLD SQUATTING:
+Registering the same domain name with a different top level domain.
+Exploits confusion about which TLD is official for an organization.
+
+Indian TLD squatting examples:
+Real: incometax.gov.in → Fake: incometax.gov.com or incometax.co.in
+Real: sbi.co.in → Fake: sbi.co.com or sbi.net.in
+Real: uidai.gov.in → Fake: uidai.gov.com or uidai.co.in
+Real: irctc.co.in → Fake: irctc.co.com or irctc.org.in
+
+Critical rule for Indian government websites:
+ALL official Indian government websites end in .gov.in
+There are NO exceptions to this rule.
+incometax.gov.com is NOT a government website.
+uidai.co.in is NOT the real UIDAI website.
+
+TECHNIQUE 6 — COMBOSQUATTING WITH FREE TLDS:
+Using cheap or free TLDs to create convincing fake domains quickly.
+Free TLDs: .tk .ml .ga .cf .gq (provided free by Freenom)
+Cheap TLDs: .xyz .top .click .online .site (under Rs 100/year)
+
+Examples targeting Indian users:
+- sbi-secure.tk (free domain)
+- hdfc-verify.ml (free domain)
+- incometax-refund.xyz (Rs 99/year)
+- aadhaar-update.top (Rs 49/year)
+- paytm-kyc.click (Rs 75/year)
+
+Why this matters: Scammers abandon these domains within days.
+                  Low cost = no risk = high volume attacks.
+                  New domain = no reputation = bypasses some filters.
+
+=== SECTION 3: INDIAN WEBSITE RED FLAGS AND OFFICIAL DOMAINS ===
+
+Indian phishing attacks target institutions that millions of
+Indians interact with daily. Knowing the exact official domains
+of these institutions prevents both false positives (flagging
+real sites as fake) and false negatives (missing fake sites).
+
+OFFICIAL INDIAN BANKING DOMAINS:
+These are the ONLY legitimate domains for each bank.
+Any variation is a phishing domain.
+
+State Bank of India (SBI):
+✅ sbi.co.in
+✅ onlinesbi.sbi
+✅ retail.onlinesbi.sbi
+✅ corp.onlinesbi.sbi
+❌ Everything else: sbi-online.com, sbi-secure.net, sbionline.in etc.
+
+HDFC Bank:
+✅ hdfcbank.com
+✅ netbanking.hdfcbank.com
+❌ Everything else: hdfc-bank.com, hdfcnetbanking.com etc.
+
+ICICI Bank:
+✅ icicibank.com
+✅ icicicareers.com (careers only)
+❌ Everything else: icici-bank.com, icicibanklogin.com etc.
+
+Axis Bank:
+✅ axisbank.com
+❌ Everything else: axis-bank.com, axisbankonline.com etc.
+
+Kotak Mahindra Bank:
+✅ kotak.com
+✅ kotaknetbanking.com
+❌ Everything else
+
+Punjab National Bank:
+✅ pnbindia.in
+✅ netpnb.com
+❌ Everything else
+
+Bank of Baroda:
+✅ bankofbaroda.in
+❌ Everything else
+
+OFFICIAL INDIAN GOVERNMENT DOMAINS:
+Rule: ALL Indian government websites end in .gov.in
+      No exceptions. Ever.
+
+Income Tax Department:
+✅ incometax.gov.in
+✅ efiling.incometax.gov.in
+✅ tin.tin.nsdl.com (TDS)
+❌ incometax.gov.com, incometaxindia.net etc.
+
+UIDAI / Aadhaar:
+✅ uidai.gov.in
+✅ myaadhaar.uidai.gov.in
+✅ resident.uidai.gov.in
+❌ uidai.co.in, aadhaar-update.com etc.
+
+EPFO / Provident Fund:
+✅ epfindia.gov.in
+✅ unifiedportal-mem.epfindia.gov.in
+❌ epfo.co.in, epf-withdrawal.com etc.
+
+Reserve Bank of India:
+✅ rbi.org.in
+✅ rbidocs.rbi.org.in
+❌ rbi.gov.in does NOT exist — rbi.org.in is correct
+❌ rbi.co.in, rbi-india.com etc.
+
+SEBI:
+✅ sebi.gov.in
+❌ sebi.co.in, sebi-india.com etc.
+
+Ministry of Finance:
+✅ finmin.nic.in
+✅ dea.gov.in
+❌ Everything else
+
+OFFICIAL INDIAN PAYMENT AND FINTECH DOMAINS:
+Paytm:
+✅ paytm.com
+✅ paytmbank.com
+❌ paytm-kyc.com, paytmverify.com etc.
+
+PhonePe:
+✅ phonepe.com
+❌ phone-pe.com, phonepe.net etc.
+
+Google Pay:
+✅ pay.google.com
+❌ googlepay.in, gpay-india.com etc.
+
+BHIM UPI:
+✅ bhimupi.org.in
+❌ bhim-upi.com, bhimupi.in etc.
+
+NPCI (National Payments Corporation):
+✅ npci.org.in
+❌ npci.co.in, npci-india.com etc.
+
+OFFICIAL TRAVEL AND UTILITY DOMAINS:
+IRCTC:
+✅ irctc.co.in
+✅ www.irctc.co.in
+✅ irctcconnect.ezeetechnosys.com (official agent)
+❌ irctc-booking.com, irctc-ticket.net etc.
+
+IndiGo Airlines:
+✅ goindigo.in
+❌ indigo-airlines.com, goindigo.com etc.
+
+Air India:
+✅ airindia.in
+❌ airindia.com (redirects but .in is official)
+
+BSNL:
+✅ bsnl.co.in
+❌ bsnl.in, bsnl-recharge.com etc.
+
+PATTERNS UNIQUE TO INDIAN PHISHING CAMPAIGNS:
+
+PATTERN 1 — FAKE GOVERNMENT SCHEME DOMAINS:
+Scammers create domains mimicking popular government schemes.
+Red flag domain patterns:
+- pm-kisan-[anything].com
+- ayushman-bharat-[anything].net
+- pmay-[anything].in (PM Awas Yojana)
+- ujjwala-[anything].com
+- jan-dhan-[anything].net
+Reality: All PM scheme portals are on .gov.in domains only.
+
+PATTERN 2 — FESTIVAL OFFER DOMAINS:
+Phishing campaigns spike during Diwali, Holi, Eid, and IPL.
+Red flag patterns:
+- amazon-diwali-sale.com
+- flipkart-holi-offer.net
+- jio-ipl-winners.com
+- paytm-diwali-cashback.in
+Reality: Amazon sales are on amazon.in — nowhere else.
+
+PATTERN 3 — COVID AND HEALTH SCHEME DOMAINS:
+- cowin-vaccine-slot.com (fake CoWIN)
+- ayushman-card-download.net
+- health-id-ndhm.com
+Reality: CoWIN official: cowin.gov.in
+         NDHM official: ndhm.gov.in / abdm.gov.in
+
+PATTERN 4 — JOB PORTAL IMPERSONATION:
+- naukri-job-alert.com
+- linkedin-india-jobs.net
+- internshala-offer.com
+Reality: Naukri: naukri.com — no other domain is official.
+
+PATTERN 5 — CRYPTO AND INVESTMENT SCAM DOMAINS:
+- bitcoin-india-profit.com
+- crypto-earn-daily.net
+- rbi-approved-investment.com (RBI never approves specific investments)
+- sebi-registered-fund.xyz
+Red flag: Any domain claiming RBI/SEBI approval in the URL is fake.
+          Regulatory approvals are not advertised in domain names.
+
+HOW TO VERIFY IF AN INDIAN WEBSITE IS OFFICIAL:
+1. Check if domain matches the list above exactly
+2. Government sites: must end in .gov.in — no exceptions
+3. Search "[organization name] official website" on Google
+   Look for the Knowledge Panel on the right — shows official domain
+4. Check domain age on whois.domaintools.com
+   Real banks and government sites are decades old
+   Phishing domains are days or weeks old
+5. Look for official app links — real sites link to Play Store/App Store
+   Phishing sites never have real app links
+
+=== SECTION 4: HOW TO VERIFY ANY URL ===
+
+URL verification is a systematic process anyone can follow
+before clicking any suspicious link. This section provides
+step-by-step verification methods, free tools available,
+and what to do after clicking a suspicious URL accidentally.
+
+THE GOLDEN RULE BEFORE ANYTHING ELSE:
+When in doubt — do NOT click.
+No legitimate offer, refund, prize, or government service
+expires because you took 5 minutes to verify the URL.
+Urgency around clicking a link is itself a red flag.
+
+STEP-BY-STEP URL VERIFICATION PROCESS:
+
+STEP 1 — READ THE URL CORRECTLY:
+Before using any tool, read the URL manually.
+Find the first single slash /
+Read the domain right to left
+Identify the real owner (last two segments before /)
+Check the TLD — is it .gov.in for government? .com for banks?
+Example: https://sbi.co.in.verify-now.net/login
+         Real domain: verify-now.net → NOT SBI → STOP HERE
+
+STEP 2 — CHECK WITH VIRUSTOTAL:
+VirusTotal is the most powerful free URL scanner available.
+It checks the URL against 70+ security vendors simultaneously.
+How to use:
+1. Go to virustotal.com (type manually, don't click links)
+2. Click URL tab
+3. Paste the suspicious URL
+4. Click Search
+5. If any vendor flags it as malicious → DO NOT visit
+6. Even 1/70 detection is worth taking seriously
+What VirusTotal checks:
+- Known phishing databases
+- Malware distribution history
+- Domain reputation scores
+- SSL certificate details
+- Domain registration date
+
+STEP 3 — CHECK DOMAIN AGE WITH WHOIS:
+Legitimate bank and government websites have existed for decades.
+Phishing domains are registered days or weeks before attacks.
+How to check domain age:
+1. Go to whois.domaintools.com
+2. Enter just the domain name (not full URL)
+   Example: enter "verify-now.net" not the full URL
+3. Look for "Registered On" or "Creation Date"
+4. A domain registered this year claiming to be SBI = FAKE
+5. Real sbi.co.in was registered in 1995
+Real domain ages for reference:
+- sbi.co.in: registered 1995
+- hdfcbank.com: registered 1994
+- incometax.gov.in: registered 2004
+- paytm.com: registered 2001
+- phonepe.com: registered 2015
+Any domain impersonating these registered after 2020 = FAKE
+
+STEP 4 — EXPAND SHORTENED URLS:
+Never click bit.ly, tinyurl, or other shortened URLs in
+financial or government communications directly.
+Free URL expanders:
+- checkshorturl.com → paste short URL → see real destination
+- unshorten.it → reveals full URL chain including redirects
+- urlex.org → shows all redirect hops
+What to look for after expanding:
+- Does the real URL match the expected organization?
+- Are there multiple redirects? (legitimate sites rarely redirect)
+- Does it end on a suspicious domain?
+
+STEP 5 — CHECK GOOGLE SAFE BROWSING:
+Google maintains a database of known dangerous websites.
+How to check:
+1. Go to: transparencyreport.google.com/safe-browsing/search
+2. Enter the URL
+3. Google shows if the site is currently dangerous
+Also built into Chrome, Firefox, Safari automatically.
+If browser shows "Deceptive site ahead" warning → ALWAYS go back.
+
+STEP 6 — VERIFY SSL CERTIFICATE DETAILS:
+For URLs with https, check who issued the SSL certificate.
+How to check in browser:
+1. Click the padlock icon in address bar
+2. Click "Certificate" or "Connection is secure"
+3. Look at "Issued to" field
+Real SBI certificate: Issued to State Bank of India
+Fake SBI phishing site: Issued to some random individual or company
+Note: Many phishing sites now have SSL — padlock alone is NOT enough.
+      Always check WHO the certificate was issued to.
+
+STEP 7 — SEARCH THE URL ON PHISHTANK:
+PhishTank is a community-driven phishing database.
+How to use:
+1. Go to phishtank.com
+2. Enter the suspicious URL
+3. Check if it's been reported by other users
+4. Even if not listed — still apply all other checks
+
+FREE VERIFICATION TOOLS SUMMARY:
+Tool                    Website                    Best For
+VirusTotal              virustotal.com             Overall URL safety scan
+WHOIS Lookup            whois.domaintools.com      Domain age and owner
+Google Safe Browsing    transparencyreport.google  Known dangerous sites
+CheckShortURL           checkshorturl.com          Expanding short URLs
+PhishTank               phishtank.com              Known phishing URLs
+URLVoid                 urlvoid.com                Reputation check
+Sucuri SiteCheck        sitecheck.sucuri.net       Malware scan
+
+IF YOU ALREADY CLICKED A SUSPICIOUS URL:
+
+IMMEDIATE ACTIONS (within first 5 minutes):
+1. Do NOT enter any information on the page that opened
+2. Close the tab immediately
+3. Clear browser cache and cookies
+4. Run a malware scan (Windows Defender or Malwarebytes free)
+
+IF YOU ENTERED LOGIN CREDENTIALS:
+1. Immediately change password from a different device
+2. Log out of all sessions (most sites have this option)
+3. Enable two-factor authentication immediately
+4. Check for any unauthorized activity in account
+
+IF YOU ENTERED CARD DETAILS:
+1. Call your bank immediately — number on back of card
+2. Request card to be blocked and reissued
+3. Monitor account for unauthorized transactions
+4. File dispute for any fraudulent charges
+5. Report on cybercrime.gov.in
+
+IF YOU ENTERED AADHAAR DETAILS:
+1. Lock Aadhaar biometrics immediately:
+   myaadhaar.uidai.gov.in → Lock/Unlock Biometrics
+2. Lock Aadhaar itself if needed (prevents new bank accounts)
+3. File complaint with UIDAI: help@uidai.gov.in
+4. Monitor for new accounts opened in your name
+
+REPORTING PHISHING URLS IN INDIA:
+Cyber Crime Portal: cybercrime.gov.in
+Cyber Crime Helpline: 1930 (24/7)
+CERT-In (Computer Emergency Response Team): cert-in.org.in
+Google Safe Browsing Report: safebrowsing.google.com/safebrowsing/report_phish
+PhishTank Submission: phishtank.com/add_web_phish.php
+Report to bank directly: use number on official website or card back
