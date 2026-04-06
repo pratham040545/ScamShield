@@ -30,11 +30,13 @@ st.markdown("""
 
 @st.cache_resource(show_spinner="🔧 Loading ScamShield AI engine...")
 def load_rag():
-    if not os.path.exists("./chroma_db"):
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    CHROMA_PATH = os.path.join(BASE_DIR, "chroma_db")
+
+    if not os.path.exists(CHROMA_PATH):
         return None
     from rag_pipeline import ScamShieldRAG
     return ScamShieldRAG()
-
 
 with st.sidebar:
     st.markdown("## 🛡️ ScamShield")

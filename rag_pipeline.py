@@ -6,7 +6,8 @@ import chromadb
 
 load_dotenv()
 
-CHROMA_DIR = "./chroma_db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CHROMA_DIR = os.path.join(BASE_DIR, "chroma_db")
 COLLECTION_NAME = "scamshield_kb"
 
 SOURCE_MAP = {
