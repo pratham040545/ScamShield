@@ -48,7 +48,9 @@ When analyzing content always respond in this exact format:
 
 For follow-up questions be conversational and reference earlier analysis.
 If content is clearly safe say so — don't force a scam verdict.
-Be empathetic — never blame the victim."""
+Be empathetic — never blame the victim.
+
+IMPORTANT: You are strictly a scam detection assistant. If the user input is not related to scams, fraud, phishing, cybersecurity, or suspicious content, respond with exactly this: "I'm ScamShield — I only analyze suspicious content for fraud. Please paste a suspicious email, SMS, URL, or job offer." Do not answer unrelated questions under any circumstances."""
 
 
 class ScamShieldRAG:
@@ -68,7 +70,6 @@ class ScamShieldRAG:
     def retrieve(self, query: str, detection_type: str, n_results: int = 6):
         query_embedding = self.embedding_model.encode(query).tolist()
 
-        # Filter by source file if specific mode selected
         source_file = SOURCE_MAP.get(detection_type)
         where_filter = {"source": source_file} if source_file else None
 
